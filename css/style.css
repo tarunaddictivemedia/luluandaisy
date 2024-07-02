@@ -806,7 +806,7 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 }
 .junkmealbg {background: url(../images/bg.png);position: relative;background-size: cover !important;}
 .naturalnutritionSlide {
-    padding: 0 6px;width: 480px !important;
+    padding: 0 6px;width: 460px !important;
 }
 .naturalnutritionSlider {margin: 20px 0;}
 .naturalnutrition .container-fluid {padding-left: 40px;}
