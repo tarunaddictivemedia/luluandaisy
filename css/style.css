@@ -167,16 +167,15 @@ footer.sitefooter {
 }
 
 .footerlogo .logowrap {
-    width: 250px;
+    width: 350px;
 }
 
 .footerlogo .logowrap img {
     width: 100%;
 }
-
 .footerlogo {
-    margin-top: -35px;
-    margin-left: -70px;
+    margin-top: -65px;
+    margin-left: -100px;
 }
 
 .col-4 {
@@ -707,6 +706,7 @@ section.customerreview {
     background: transparent;
     color: #4F4343;
 }
+h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; font-style: normal; font-weight: 700; line-height: 100px; }
 .outlinebtn:hover {
     background: #4F4343;color: #fff;
 }
