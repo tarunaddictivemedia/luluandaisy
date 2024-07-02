@@ -814,11 +814,11 @@ section.customerreview {
 .junkmealbg:after {content:""; background: url(../images/shape.png); background-size: cover !important; background-position: 100% 0%; width: 100%; position: absolute;bottom: 0;left: 0;height: 520px;z-index: 0;}
 .productSlider {max-width: 900px; margin: 0 auto;}
 .productSlider button.slick-arrow {
-    background: url(../images/arrowright.png);background-size: cover !important;width: 50px;height: 50px;
+    background: url(../images/arrowright.png);background-size: cover !important;width: 70px;height: 70px;
     transform: translate(0, -45%);
 }
 .productSlider button.slick-next.slick-arrow {
-    transform: rotate(180deg);top: 45%;
+    transform: rotate(180deg);top: 42%;
 }
 .productSlider button.slick-arrow:before {
     display: none;
