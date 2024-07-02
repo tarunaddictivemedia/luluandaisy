@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0
+}
+
+*,:after,:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 10px;
+}
+html, body {
+    overflow-x: hidden;
+}
+body {
+    background-color: #fff;
+    color: #747474;
+    font-family: 'Arimo', sans-serif;
+    margin: 0 auto !important;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+    max-width: 1700px;
+}
+a, a img, img {
+    transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+ul  {
+    list-style: none;
+    padding-left: 0
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.col-20 {
+    width: 20%;box-sizing: border-box;
+}
+.col-60 {
+    width: 60%;box-sizing: border-box;
+}
+.col-50 {
+    width: 50%;box-sizing: border-box;
+}
+.col-30 {
+    width: 30%;box-sizing: border-box;
+}
+.col-40 {
+    width: 40%;box-sizing: border-box;
+}
+.col-70 {
+    width: 70%;box-sizing: border-box;
+}
+.col-half {
+    width: 50%;box-sizing: border-box;
+}
+.col-third {
+    width: calc(100% / 3);box-sizing: border-box;
+}
+.col-forth {
+    width: calc(100% / 4);box-sizing: border-box;
+}
+
+.line {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: draw 5s forwards infinite;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Adding delay to animate each line sequentially */
+.vector .line:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.vector .line:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.vector .line:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.vector1 .line:nth-child(1) {
+    animation-delay: 3s;
+}
+
+.vector1 .line:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.vector1 .line:nth-child(3) {
+    animation-delay: 5s;
+}
+.linethumb {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: draw 2s forwards infinite;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Adding delay to animate each linethumb sequentially */
+.thumbs .linethumb:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.thumbs .linethumb:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.thumbs .linethumb:nth-child(3) {
+    animation-delay: 2s;
+}
+.pdvector img {
+    position: relative;
+    animation: move 6s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px); /* Move to the right */
+    }
+    100% {
+        transform: translateY(0); /* Move back to the original position */
+    }
+}
+
+footer.sitefooter {
+    background: #F2F0F0;
+}
+
+.col-6 {
+    width: 60%;
+}
+
+.footerlogo .logowrap {
+    width: 250px;
+}
+
+.footerlogo .logowrap img {
+    width: 100%;
+}
+
+.footerlogo {
+    margin-top: -35px;
+    margin-left: -70px;
+}
+
+.col-4 {
+    width: 40%;
+}
+
+.mediadiscount {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.headingfooter h4 {
+    color: #272220;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+}
+
+.topfooter {
+    border-bottom: 1px solid #E0DCDC;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+}
+
+ul.sociamediaft {
+    display: flex;
+}
+
+ul.sociamediaft li {
+    margin: 0 10px;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.footermenulink .footermenu ul li a {
+    display: block;
+    color: #6A6264;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.footermenulink .footermenu ul li a:hover, .blogsection .col-third .Content h2 a:hover, .customeragree .customerbtn:hover {
+    color: #4f4343;
+}
+.middlefooter {
+    margin-bottom: 30px;
+}
+
+.copyrightBlock {
+    background: #E0DCDC;
+}
+
+.copyright {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright p {
+    color: #8E8585;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+ul.sociamediaft li img {
+    width: 18px;
+}
+
+.subscribeinnr .input {
+    display: flex;
+}
+
+.subscribeinnr .input input {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    color: #8E8585;
+    font-weight: 400;
+}
+
+.subscribeinnr .input button {
+    width: 100px;
+    background: #4F4343;
+    color: #fff;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    font-family: 'Poppins';    
+    border-bottom-right-radius: 30px;
+}
+
+section.blogsection {padding: 80px 0 100px;}
+
+.headingBox h4 {
+    color: #272220;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+}
+
+.headingBox h4 svg {
+    margin-left: 20px;
+}
+
+.blogsection .col-third {
+    padding: 0 15px;
+}
+
+.blogsection .row {
+    margin: 0 -15px;
+}
+
+.blogsection .col-third .image {
+    border-radius: 30px;
+}
+
+.blogsection .col-third .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.blogsection .col-third .Content h6 {
+    color: #272220;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 12px 0;
+}
+
+.blogsection .col-third .Content h2 {
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+}
+.blogsection .col-third .Content h2 a {
+    color: #6A6264;text-decoration: none;
+}
+section.customerreview {
+    background: #F2F2F2;
+}
+.col-7 {
+    width: 70%;
+}
+
+.col-3 {
+    width: 30%;
+}
+
+.customerreview .reviewtabs ul {
+    display: flex;
+    padding: 60px 0 30px;
+}
+.tabsContentinnr .row .col-half:nth-child(1) {
+    height: 280px;
+}
+.customerreview .reviewtabs ul li {
+    color: #272220;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    margin-right: 50px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.customerreview .reviewtabs ul li.active, .customerreview .reviewtabs ul li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.tabsContent .tabsContentinnr .halfinnr {
+    border-radius: 20px;
+    background: #FAFAF9;
+    padding: 30px;
+}
+
+.tabsContent .tabsContentinnr .halfinnr.vidrev {
+    background: transparent;
+    position: relative;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.tabsContent .tabsContentinnr .halfinnr.vidrev .videoreview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tabsContent .tabsContentinnr .halfinnr.vidrev .videoreview video {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tabsContent .tabsContentinnr .halfinnr p {
+    color: #6A6264;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 20px 0;
+}
+
+.tabsContent .tabsContentinnr .halfinnr h6.name {
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+}
+
+.tabsContent .tabsContentinnr .halfinnr h6.name img {
+    margin-right: 10px;
+    color: #272220;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tabsContent .tabsContentinnr .halfinnr.vidrev .star {
+    z-index: 1;
+    position: relative;
+}
+
+.tabsContent .tabsContentinnr .halfinnr.vidrev h6.name {
+    position: absolute;
+    bottom: 30px;
+    font-family: Poppins;
+    color: #fff;
+}
+
+.tabsContent .tabsContentinnr .halfinnr.vidrev .play {
+    position: absolute;
+    top: 38%;
+    left: 45%;
+}
+
+.tabsContentinnr .col-half {
+    padding: 6px;
+}
+
+.tabsContentinnr .row {
+    margin: 0 -10px;
+}
+
+.tabsContentinnr .col-half:nth-child(2) {
+    margin-top: 20px;
+}
+
+.tabsContentinnr .col-half:nth-child(3) {
+    margin-top: -90px;
+}
+.blogsection .col-third .image {
+    transition: 0.5s all ease-in-out;
+    overflow: hidden;
+}
+
+.blogsection .col-third .image:hover img {
+    transform: scale(1.02);
+}
+.dogimage {
+    width: 500px;
+    padding-left: 30px;
+    height: 100%;
+    position: relative;
+}
+
+.dogimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.dogimage .dogmouthvector {
+    display: flex;
+    position: absolute;
+    bottom: 180px;
+    left: 30px;
+    z-index: 2;
+    width: 340px;
+    justify-content: space-between;
+}
+
+.dogimage .dogmouthvector .vector1 svg {
+    position: relative;
+    top: 20px;
+    transform: rotate(7deg);
+    right: 10px;
+}
+.tabsContentinnr {margin-bottom: 40px;}
+
+.headinBox h2 {
+    color: #272220;
+    text-align: center;
+    font-family: Arimo;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 140% */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.wouldyoueatBlock .image img {
+    width: 100%;
+}
+
+.wouldyoueatBlock .row:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-bottom: -12px;
+}
+
+.wouldyoueatBlock .row {
+    align-items: center;
+}
+
+.wouldyoueatBlock .row:nth-child(1) h3 {
+    transform: rotate(-3deg);
+}
+
+.wouldyoueatBlock .foodinnr h3 {
+    color: #272220;
+    text-align: center;
+    font-family: "Gochi Hand";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    max-width: 410px;
+}
+
+.wouldyoueatBlock .foodinnr p {
+    color: #6A6264;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 318px;
+    margin-top: 20px;
+}
+
+.wouldyoueatBlock .row:nth-child(1) p {
+    margin-left: 30px;
+}
+
+.wouldyoueatBlock .foodinnr {
+    padding: 0 30px;
+}
+.wouldyoueatBlock .row:nth-child(2) p {
+    margin-left: 20px;
+}
+.wouldyoueatBlock .row:nth-child(2) h3 {
+    transform: rotate(3deg);
+    margin-top: 50px;
+}
+
+.wouldyoueatBlock .row:nth-child(1) .arrowtop {
+    width: 259px;
+    transform: rotate(-2.461deg);
+    flex-shrink: 0;
+    position: absolute;
+    top: -150px;
+    right: 90px;
+}
+
+.wouldyoueatBlock .row:nth-child(1) .arrowtop img {
+    width: 100%;
+}
+
+.wouldyoueatBlock .row:nth-child(1) {
+    position: relative;
+    margin-bottom: -50px;
+}
+.wouldyoueatBlock .row:nth-child(2) .image{
+    margin-top: -60px;
+    position: relative;
+}
+.customeragree {
+    position: relative;
+}
+
+.customeragree .arrowbottom {
+    position: absolute;
+    bottom: 24px;
+    left: -70px;
+    width: 210.094px;
+    height: 88.291px;
+    transform: rotate(-6.011deg);
+}
+
+.customeragree .arrowbottom img {
+    width: 100%;
+}
+
+.customeragree .customerbtn {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+    padding-top: 10px;
+    color: #272220;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.customerbtn span.thumbs {
+    background: #3AFBBB;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-left: -20px;
+}
+
+.customerbtn span.thumbs svg {
+    position: absolute;
+    top: -16px;
+    right: -10px;
+}
+
+.customerbtn span.thumbs img {
+    width: 25px;
+}
+.col-45 {
+    width: 45%;
+}
+.col-55 {
+    width: 55%;
+}
+.mealdelivery {
+    padding: 180px 0;
+    position: relative;z-index: 1
+}
+.mealdelivery .productslide img {
+    margin: 0 auto;
+}
+
+.mealdelivery .headingBox {
+    text-align: center;
+}
+
+.headingBox h2 {
+    color: #272220;
+    text-align: center;
+    font-family: Arimo;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 100% */
+    text-transform: uppercase;
+    position: relative;
+}
+
+.headingBox .button {
+    margin-top: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #4F4343;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 200px;
+    height: 46px;
+    cursor: pointer;
+    margin: 0 auto;
+    border:  1px solid #4F4343;
+}
+.btn:hover, .subscribeinnr .input button:hover {
+    background: #3d3434;
+}
+.outlinebtn {
+    background: transparent;
+    color: #4F4343;
+}
+.outlinebtn:hover {
+    background: #4F4343;color: #fff;
+}
+.mealdelivery .headingBox span.mumbaivector {
+    position: absolute;
+    top: -130px;
+    right: 220px;
+    width: 150px;
+}
+
+.mealdelivery .headingBox span.mumbaivector img {
+    width: 100%;
+}
+.junkfreeproducts > img {
+    width: 100%;
+}
+
+.headingBox .buttongrp {
+    display: flex;
+    justify-content: center;
+}
+
+.headingBox .buttongrp .buttoncol {
+    margin: 20px 10px;
+}
+
+.junkfreeproducts {
+    padding-top: 180px;
+    position: relative;
+}
+
+.junkfreeproducts .pdvector {
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    z-index: -1;
+}
+
+.junkfreeproducts .pdvectordiff {
+    position: absolute;
+    bottom: -50px;
+    left: -70px;
+}
+
+.junkfreetreatPD {
+    padding-bottom: 0px;
+}
+.naturalnutrition .headingBox h2 {
+    color: #6A6264;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+}
+.naturalnutritionSlider .naturalnutritionSlide .Slideinnr {
+    border-radius: 15px;
+    background: #FEE5C2;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.naturalnutritionSlider .naturalnutritionSlide .Slideinnr .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    background: rgba(0,0,0,0.1);
+    margin-right: 20px;
+}
+
+.naturalnutritionSlider .naturalnutritionSlide .Slideinnr .icon img {
+    width: 34px;
+}
+
+.naturalnutritionSlider .naturalnutritionSlide .Slideinnr .contnt p strong {
+    display: block;
+    color: #4F4343;
+    font-family: Arimo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24.036px;
+}
+
+.naturalnutritionSlider .naturalnutritionSlide .Slideinnr .contnt p {
+    color: #6A6264;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.junkmealbg {background: url(../images/bg.png);position: relative;background-size: cover !important;}
+.naturalnutritionSlide {
+    padding: 0 6px;width: 480px !important;
+}
+.naturalnutritionSlider {margin: 20px 0;}
+.naturalnutrition .container-fluid {padding-left: 40px;}
+.naturalnutrition .headingBox h2 {text-transform: capitalize;}
+.junkmealbg:after {content:""; background: url(../images/shape.png); background-size: cover !important; background-position: 100% 0%; width: 100%; position: absolute;bottom: 0;left: 0;height: 520px;z-index: 0;}
+.productSlider {max-width: 900px; margin: 0 auto;}
+.productSlider button.slick-arrow {
+    background: url(../images/arrowright.png);background-size: cover !important;width: 50px;height: 50px;
+    transform: translate(0, -45%);
+}
+.productSlider button.slick-next.slick-arrow {
+    transform: rotate(180deg);top: 45%;
+}
+.productSlider button.slick-arrow:before {
+    display: none;
+}
