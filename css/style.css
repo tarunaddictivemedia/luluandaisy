@@ -915,7 +915,7 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 .col-25 {width: 25%;}
 .col-75 {width: 75%}
 .siteheader {display: none;}
-.siteheader .navbar {height: 100%;}
+.siteheader .navbar {height: 80px;}
 .siteheader .navbar ul {
     display: flex;
     align-items: center;
@@ -933,8 +933,8 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
     padding: 0 25px;
     text-decoration: none;
 }
-.siteheader {position: relative;}
-.siteheader:after {
+.siteheader .siteheaderinnr{position: relative;overflow: hidden;}
+.siteheader .siteheaderinnr:after {
     content: "";
     border-radius: 1055.546px;
     background: #FBBE68;
@@ -991,4 +991,17 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 .naturalnutrition {
     padding-top: 70px;
 }
-.siteheader.fixheader {display: block;}
+.siteheader.fixheader {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 2;
+}
+.siteheader.fixheader .logo {
+    width: 16%;
+    position: absolute;
+    left: 16%;
+}
