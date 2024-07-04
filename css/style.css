@@ -914,6 +914,7 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 }
 .col-25 {width: 25%;}
 .col-75 {width: 75%}
+.siteheader {display: none;}
 .siteheader .navbar {height: 100%;}
 .siteheader .navbar ul {
     display: flex;
