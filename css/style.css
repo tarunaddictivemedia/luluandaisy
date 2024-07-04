@@ -884,8 +884,8 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 .soohealthyitshow {
     position: relative;
 }
-.bggradient {position: absolute;top: 0;left: 0;flex-shrink: 0;border-radius: 674.667px;filter: blur(300px);z-index: -1;width: 674.667px;height: 414.667px;flex-shrink: 0;}
-.bggradient1 {position: absolute;top: 0;right: 0;flex-shrink: 0;border-radius: 674.667px;filter: blur(300px);z-index: -1;width: 674.667px;height: 170.667px;flex-shrink: 0;}
+.bggradient {position: absolute;top: 0;left: 0;flex-shrink: 0;border-radius: 674.667px;filter: blur(200px);z-index: -1;width: 674.667px;height: 414.667px;flex-shrink: 0;}
+.bggradient1 {position: absolute;top: 0;right: 0;flex-shrink: 0;border-radius: 674.667px;filter: blur(200px);z-index: -1;width: 674.667px;height: 170.667px;flex-shrink: 0;}
 .soohealthyitshow .shlogo {text-align: center;}
 .btngrp {
     display: flex;
@@ -1007,4 +1007,35 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 }
 .naturalnutrition {
     padding-top: 70px;
+}
+.bggradient {
+    background: #FBBE68;
+    animation: gradientAnimation 9s infinite;
+}
+
+@keyframes gradientAnimation {
+    0%, 50% {
+      background: #FBBE68;
+    }
+    50%, 75% {
+      background: #ABC9AB;
+    }
+    75%, 100% {
+      background: #E9C1DC;
+    }
+}
+.bggradient1 {
+    background: #ADCDAE;
+    animation: gradientAnimation2 9s infinite;
+}
+@keyframes gradientAnimation2 {
+    0%, 50% {
+      background: #ADCDAE;
+    }
+    50%, 75% {
+      background: #E9C1DC;
+    }
+    75%, 100% {
+      background: #FBBB62;
+    }
 }
