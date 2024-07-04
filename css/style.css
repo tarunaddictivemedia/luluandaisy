@@ -823,3 +823,170 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 .productSlider button.slick-arrow:before {
     display: none;
 }
+.soohealthyitshow {
+    position: relative;
+}
+.bggradient {position: absolute;top: 0;left: 0;flex-shrink: 0;border-radius: 674.667px;filter: blur(300px);z-index: -1;width: 674.667px;height: 414.667px;flex-shrink: 0;}
+.bggradient1 {position: absolute;top: 0;right: 0;flex-shrink: 0;border-radius: 674.667px;filter: blur(300px);z-index: -1;width: 674.667px;height: 170.667px;flex-shrink: 0;}
+.soohealthyitshow .shlogo {text-align: center;}
+.btngrp {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    right: 0;
+}
+.soohealthyitshow .text {
+    color: #6A6264;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.btngrp .btncol {
+    margin: 0 10px;
+}
+.soohealthyitshow .shlogo {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0px;
+    width: 25%;
+}
+.soohealthyitshow h1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0px;
+}
+.soohealthyitshow {
+    width: 100%;
+    margin: 0px;
+    padding: 0rem 0;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.soohealthyitshow .dog1 {
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    right: 82%;
+    bottom: -18%;
+    transform: translate(0, 0);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.soohealthyitshow .dog2 {
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    right: -50%;
+    bottom: -18%;
+    transform: translate(0, 0);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.shlogo img {
+    width: 100%;
+}
+.shlogo {margin: 0 auto;}
+.textlulu {
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    width: 100%;
+}
+.siteheader .logo {
+    margin-bottom: -120px;
+}
+.siteheader .logo img {
+    width: 100%;
+}
+.col-25 {width: 25%;}
+.col-75 {width: 75%}
+.siteheader .navbar {height: 100%;}
+.siteheader .navbar ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+}
+.siteheader .navbar ul li a {
+    color: #000;
+    font-family: poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+    padding: 0 25px;
+    text-decoration: none;
+}
+.siteheader {position: relative;}
+.siteheader:after {
+    content: "";
+    border-radius: 1055.546px;
+    background: #FBBE68;
+    filter: blur(300px);
+    position: absolute;
+    top: 0;
+    width: 800px;
+    height: 500px;
+    flex-shrink: 0;
+    right: 0;
+    z-index: -1;
+}
+.circleshape img {
+    width: 100%;
+}
+.circleshape {
+    position: absolute;
+    bottom: -16%;
+    left: 19%;
+    z-index: -1;
+    width: 64%;
+}
+.circletext {
+    position: absolute;
+}
+.circletext2 {
+    bottom: 46%;
+    right: -30%;
+}
+.circletext1 {
+    bottom: 68%;
+    left: -34%;
+}
+.circletext3 {
+    bottom: -30%;
+    left: 52%;
+}
+.circletext5 {
+    left: 16%;
+    bottom: -30%;
+}
+.circletext4 {
+    left: -40%;
+}
+.circletext6 {
+    left: 40%;
+    bottom: -30%;
+}
+.circletext7 {
+    bottom: 18%;
+    right: -30%;
+    z-index: -1;
+}
+.naturalnutrition {
+    padding-top: 70px;
+}
