@@ -20,7 +20,7 @@
 	</div>
 	<div class="siteheaderinnr">
 		<div class="container">	
-			<div class="row">
+			<div class="flexwrap">
 				<div class="col-25">
 				</div>
 				<div class="col-75">
@@ -683,6 +683,17 @@
         $(this).hide();
     }); 
 
+
+    $(document).scroll(function () {
+	    var heightlocation = $(this).scrollTop();
+	    if (heightlocation > 1000) {
+	        $('.siteheader').addClass("fixheader");
+	    } else {
+	        $('.siteheader').removeClass("fixheader");
+	    }
+	});
+
+
     document.addEventListener("DOMContentLoaded", function() {
 	    gsap.registerPlugin(ScrollTrigger);
 
@@ -720,15 +731,6 @@
 	        // opacity: 1,
 	        duration: 1
 	    });
-	});
-
-    $(document).scroll(function () {
-	    var heightlocation = $(this).scrollTop();
-	    if (heightlocation > 1000) {
-	        $('.siteheader').addClass("fixheader");
-	    } else {
-	        $('.siteheader').removeClass("fixheader");
-	    }
 	});
 
 
