@@ -113,7 +113,7 @@
 		<div class="headingBox">
 			<h2>Lulu & Daisy’s 100% natural nutrition</h2>
 			<div class="buttongrp">
-				<div class="buttoncol"><a class="btn">GET TREATS</a></div>
+				<div class="buttoncol"><a class="btn outlinebtn">GET TREATS</a></div>
 				<div class="buttoncol"><a class="btn outlinebtn">FRESH MEALS</a></div>
 			</div>
 		</div>
@@ -127,7 +127,7 @@
 		<div class="container">
 			<div class="junkfreetreatPD">
 				<div class="junkfreeproducts">
-					<img src="images/pdgrp.png" alt="Product">
+					<img src="images/pdgrp.png" alt="Product" id="pdimg">
 					<div class="pdvector">
 						<img src="images/pdvector.png" alt="Vector">
 					</div>
@@ -140,7 +140,7 @@
 			<div class="headingBox">
 				<h2>100% Junk-<br>free Treats</h2>
 				<div class="button">
-					<a class="btn">View All</a>
+					<a class="btn outlinebtn">View All</a>
 				</div>
 			</div>
 		</div>
@@ -170,7 +170,7 @@
 			<div class="headingBox">
 				<h2>100% fresh customized meal delivery <span class="mumbaivector"><img src="images/mumbai.png" alt="mumbai"></span></h2>
 				<div class="button">
-					<a class="btn">Try now</a>
+					<a class="btn outlinebtn">Try now</a>
 				</div>
 			</div>
 		</div>	
@@ -369,14 +369,14 @@
 					<img src="images/dog.png" alt="Image">
 					<div class="dogmouthvector">
 				        <div class="vector">
-				            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="170" viewBox="0 0 98 170" fill="none">
+				            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="200" viewBox="0 0 98 170" fill="none">
 				                <path class="line" d="M82 31.7783L45.8901 3.85889" stroke="#EACB62" stroke-width="6" stroke-linecap="round"/>
 				                <path class="line" d="M95 131.778L53 166.778" stroke="#EACB62" stroke-width="6" stroke-linecap="round"/>
 				                <path class="line" d="M86 77.7783L3 77.7783" stroke="#EACB62" stroke-width="6" stroke-linecap="round"/>
 				            </svg>
 				        </div>
 				        <div class="vector1">
-				            <svg xmlns="http://www.w3.org/2000/svg" width="148" height="164" viewBox="0 0 148 164" fill="none">
+				            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="200" viewBox="0 0 148 164" fill="none">
 				                <path class="line" d="M87 3.77832L36 20.5115" stroke="#EACB62" stroke-width="6" stroke-linecap="round"/>
 				                <path class="line" d="M145 95.7783L29 75.7783" stroke="#EACB62" stroke-width="6" stroke-linecap="round"/>
 				                <path class="line" d="M55.7697 160.612L3.00001 114.779" stroke="#EACB62" stroke-width="6" stroke-linecap="round"/>
@@ -658,7 +658,9 @@
 	  slidesToScroll: 1,
 	  arrows: false,
 	  dots: false,
-	  variableWidth: true
+	  variableWidth: true,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
 	});
 
 	$(".reviewtabs ul li").click(function(e) {
@@ -735,5 +737,20 @@
 
 
 </script>
+ <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from("#pdimg", {
+      y: 200, // Starts 200 pixels below its natural position
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#pdimg",
+        start: "top 80%", // Animation starts when the top of the image is 80% from the top of the viewport
+        end: "top 30%", // Animation ends when the top of the image is 30% from the top of the viewport
+        scrub: true // Smooth scrubbing, the animation plays based on scroll position
+      }
+    });
+  </script>
 </body>
 </html>
