@@ -54,10 +54,10 @@
 		<img src="images/dog2.png" alt="Dog">
 	</div>
 	<div class="textlulu">
-		<div class="text text1" style="opacity: 0.25;">Lulu & Daisy’s 100% </div>
-		<div class="text text2" style="opacity: 0.25;">natural nutrition </div>
-		<div class="text text3" style="opacity: 0.25;">helps your dog become</div>
-		<div class="text text4" style="opacity: 0.25;">visibly healthier.</div>
+		<div class="text text1"><span class="one">Lulu & </span> <span class="two">Daisy’s</span> <span class="three">100%</span> </div>
+		<div class="text text2"><span class="one">natural</span> <span class="two">nutrition</span> </div>
+		<div class="text text3"><span class="one">helps</span> <span class="one">your</span> <span class="three">dog</span> <span class="four">become</span></div>
+		<div class="text text4"><span class="one">visibly</span> <span class="two">healthier</span>.</div>
 	</div>
 	<div class="btngrp" style="opacity: 0;">
 		<div class="btncol"><a class="btn">GET TREATS</a></div>
@@ -606,32 +606,39 @@
 	      .to(".dog1", { duration: 16, x: '46%', ease: "power3.inOut" }, 17)
 	      .to(".dog2", { duration: 16, x: '-100%', ease: "power3.inOut" }, 17)
 	      .to(".textlulu", { duration: 16, x: 0, bottom: '14%', ease: "power3.inOut" }, 17)
-	      .to(".text1", { duration: 14, opacity: 1, ease: "power3.inOut" }, 17)
-	      .to(".text2", { duration: 15, opacity: 1, ease: "power3.inOut" }, 20)
-	      .to(".text3", { duration: 16, opacity: 1, ease: "power3.inOut" }, 25)
-	      .to(".text4", { duration: 17, opacity: 1, ease: "power3.inOut" }, 30)
-	      .to(".shlogo", { duration: 18, opacity: 0, ease: "power3.inOut" }, 32)
-	      .to(".headinghealthy", { duration: 18, x: 0, top: '12%', fontSize: '85px', ease: "power3.inOut" }, 32)
-	      .to(".textlulu", { duration: 18, x: 0, bottom: '29%', ease: "power3.inOut" }, 33)
-	      .to(".btngrp", { duration: 19, x: 0, bottom: '19%', opacity: 1, ease: "power3.inOut" }, 35)
-	      .to(".headinghealthy", { duration: 20, opacity: 0, ease: "power3.inOut" }, 37)
-	      .to(".textlulu .text", { duration: 20, fontSize: '30px', ease: "power3.inOut" }, 37)
-	      .to(".textlulu", { duration: 20, x: 0, bottom: '74%', ease: "power3.inOut" }, 37)
-	      .to(".btngrp", { duration: 20, x: 0, bottom: '65%', opacity: 1, ease: "power3.inOut" }, 37)
-	      .to(".dog1", { duration: 21, x: '140%', ease: "power3.inOut" }, 39)
-	      .to(".dog2", { duration: 21, x: '-200%', ease: "power3.inOut" }, 39)
-	      .to(".textlulu", { duration: 22, opacity: 0, ease: "power3.inOut" }, 41)
-	      .to(".btngrp", { duration: 22, opacity: 0, ease: "power3.inOut" }, 41)
-	      .to(".dog1", { duration: 23, x: '140%', y: '-35%', ease: "power3.inOut" }, 43)
-	      .to(".dog2", { duration: 23, x: '-200%', y: '-35%', ease: "power3.inOut" }, 43)
-	      .to(".circleshape", { duration: 23,x: 0, bottom: '-16%', opacity: 1, ease: "power3.inOut" }, 43)
-	      .to(".circletext1", { duration: 24,x: 0, left: '34%', opacity: 1, ease: "power3.inOut" }, 45)
-	      .to(".circletext2", { duration: 25,x: 0, right: '13%', opacity: 1, ease: "power3.inOut" }, 47)
-	      .to(".circletext3", { duration: 26,x: 0, bottom: '22%', opacity: 1, ease: "power3.inOut" }, 49)
-	      .to(".circletext5", { duration: 27,x: 0, bottom: '35%', opacity: 1, ease: "power3.inOut" }, 51)
-	      .to(".circletext4", { duration: 28,x: 0, left: '20%', bottom: '14%', opacity: 1, ease: "power3.inOut" }, 53)
-	      .to(".circletext6", { duration: 29,x: 0, bottom: '-1%', opacity: 1, ease: "power3.inOut" }, 55)
-	      .to(".circletext7", { duration: 30,x: 0, right: '16%', opacity: 1, ease: "power3.inOut" }, 57);
+	      .to(".text1 .one", { duration: 14, opacity: 1, ease: "power3.inOut" }, 17)
+	      .to(".text1 .two", { duration: 15, opacity: 1, ease: "power3.inOut" }, 19)
+	      .to(".text1 .three", { duration: 16, opacity: 1, ease: "power3.inOut" }, 21)
+	      .to(".text2 .one", { duration: 17, opacity: 1, ease: "power3.inOut" }, 22)
+	      .to(".text2 .two", { duration: 18, opacity: 1, ease: "power3.inOut" }, 24)
+	      .to(".text3 .one", { duration: 19, opacity: 1, ease: "power3.inOut" }, 26)
+	      .to(".text3 .two", { duration: 20, opacity: 1, ease: "power3.inOut" }, 28)
+	      .to(".text3 .three", { duration: 21, opacity: 1, ease: "power3.inOut" }, 30)
+	      .to(".text3 .four", { duration: 22, opacity: 1, ease: "power3.inOut" }, 32)
+	      .to(".text4 .one", { duration: 23, opacity: 1, ease: "power3.inOut" }, 34)
+	      .to(".text4 .two", { duration: 24, opacity: 1, ease: "power3.inOut" }, 36)
+	      .to(".shlogo", { duration: 25, opacity: 0, ease: "power3.inOut" }, 38)
+	      .to(".headinghealthy", { duration: 25, x: 0, top: '12%', fontSize: '85px', ease: "power3.inOut" }, 38)
+	      .to(".textlulu", { duration: 25, x: 0, bottom: '29%', ease: "power3.inOut" }, 39)
+	      .to(".btngrp", { duration: 26, x: 0, bottom: '19%', opacity: 1, ease: "power3.inOut" }, 41)
+	      .to(".headinghealthy", { duration: 27, opacity: 0, ease: "power3.inOut" }, 43)
+	      .to(".textlulu .text", { duration: 27, fontSize: '30px', ease: "power3.inOut" }, 45)
+	      .to(".textlulu", { duration: 27, x: 0, bottom: '74%', ease: "power3.inOut" }, 47)
+	      .to(".btngrp", { duration: 27, x: 0, bottom: '65%', opacity: 1, ease: "power3.inOut" }, 47)
+	      .to(".dog1", { duration: 28, x: '140%', ease: "power3.inOut" }, 49)
+	      .to(".dog2", { duration: 28, x: '-200%', ease: "power3.inOut" }, 49)
+	      .to(".textlulu", { duration: 29, opacity: 0, ease: "power3.inOut" }, 51)
+	      .to(".btngrp", { duration: 29, opacity: 0, ease: "power3.inOut" }, 51)
+	      .to(".dog1", { duration: 30, x: '140%', y: '-35%', ease: "power3.inOut" }, 53)
+	      .to(".dog2", { duration: 30, x: '-200%', y: '-35%', ease: "power3.inOut" }, 53)
+	      .to(".circleshape", { duration: 30,x: 0, bottom: '-16%', opacity: 1, ease: "power3.inOut" }, 53)
+	      .to(".circletext1", { duration: 31,x: 0, left: '34%', opacity: 1, ease: "power3.inOut" }, 55)
+	      .to(".circletext2", { duration: 45,x: 0, right: '13%', opacity: 1, ease: "power3.inOut" }, 57)
+	      .to(".circletext3", { duration: 46,x: 0, bottom: '22%', opacity: 1, ease: "power3.inOut" }, 69)
+	      .to(".circletext5", { duration: 47,x: 0, bottom: '35%', opacity: 1, ease: "power3.inOut" }, 71)
+	      .to(".circletext4", { duration: 48,x: 0, left: '20%', bottom: '14%', opacity: 1, ease: "power3.inOut" }, 83)
+	      .to(".circletext6", { duration: 49,x: 0, bottom: '-1%', opacity: 1, ease: "power3.inOut" }, 105)
+	      .to(".circletext7", { duration: 40,x: 0, right: '16%', opacity: 1, ease: "power3.inOut" }, 117);
 
 	    let scene = new ScrollMagic.Scene({
 	        triggerElement: '#constant-stress',
