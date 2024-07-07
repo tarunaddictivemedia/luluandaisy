@@ -1048,3 +1048,581 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
     cursor: pointer;
 }
 .textlulu .text span {opacity: 0.25;}
+
+@media(max-width: 1490px) {
+    .soohealthyitshow .dog1 img,  .soohealthyitshow .dog2 img {width: 100%;}
+    .soohealthyitshow .dog1, .soohealthyitshow .dog2 {
+        width: 650px;
+    }
+    h1.headinghealthy {
+        font-size: 70px;
+        line-height: 1.2;
+    }
+    .soohealthyitshow .text {font-size: 30px}
+    .circletext {
+        width: 160px;
+    }
+    .circletext2 {
+        bottom: 39%;
+    }
+    .circletext img {
+        width: 100%;
+    }
+    .dog2 img {
+        margin-left: 60px;
+    }
+    .circletext.circletext7 img {
+        margin-left: -100px;
+    }
+}
+@media(max-width: 1300px) {
+    .soohealthyitshow .dog1 img,  .soohealthyitshow .dog2 img {width: 100%;}
+    .soohealthyitshow .dog1, .soohealthyitshow .dog2 {
+        width: 550px;
+    }
+    h1.headinghealthy {
+        font-size: 60px;
+        line-height: 1.2;
+    }
+    .soohealthyitshow .text {font-size: 20px}
+    .circletext {
+        width: 130px;
+    }
+    .circletext2 {
+        bottom: 39%;
+    }
+    .circletext img {
+        width: 100%;
+    }
+    .dog2 img {
+        margin-left: -30px;
+    }
+    .circletext.circletext7 img {
+        margin-left: -130px;
+    }
+}
+@media(max-width: 1025px) {
+    .soohealthyitshow .dog1 {right: 72%}
+    .naturalnutrition {
+        padding-top: 40px;
+    }
+    .naturalnutritionSlider .naturalnutritionSlide .Slideinnr {        
+        padding: 20px 15px;
+    }
+    .naturalnutritionSlide {
+        width: 380px !important;
+    }
+    .naturalnutritionSlider .naturalnutritionSlide .Slideinnr .icon {
+        width: 50px;
+        height: 50px;
+    }
+    .naturalnutritionSlider .naturalnutritionSlide .Slideinnr .contnt p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .naturalnutritionSlider .naturalnutritionSlide .Slideinnr .contnt p strong {
+        font-size: 16px;
+        line-height: 16.036px;
+    }
+    .naturalnutrition .headingBox h2 {
+        font-size: 30px;
+        line-height: 46px;
+    }
+    .btn {
+        width: 150px;
+        font-size: 12px;
+        height: 36px;
+    }
+    .headingBox h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .headinBox h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .mealdelivery {
+        padding: 120px 0;
+    }
+    .mealdelivery .headingBox span.mumbaivector {
+        position: absolute;
+        top: -120px;
+        right: 220px;
+        width: 140px;
+    }
+    .wouldyoueatBlock .foodinnr h3 {
+        font-size: 30px;
+        line-height: 36px;
+        max-width: 410px;
+    }
+    .wouldyoueatBlock .foodinnr p {font-size: 12px}
+    .wouldyoueatBlock .row:nth-child(1) .arrowtop {
+        width: 180px;
+        transform: rotate(-2.461deg);
+        flex-shrink: 0;
+        position: absolute;
+        top: -120px;
+        right: 60px;
+    }
+    .tabsContent .tabsContentinnr .halfinnr p {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    .tabsContent .tabsContentinnr .halfinnr h6.name {
+        font-size: 12px;
+    }
+    .tabsContent .tabsContentinnr .halfinnr {
+        padding: 20px;
+    }
+    .tabsContentinnr .row .col-half:nth-child(1) {
+        height: 210px;
+    }
+    .tabsContentinnr .col-half:nth-child(3) {
+        margin-top: -44px;
+    }
+    .blogsection .col-third .Content h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .footerlogo {
+        margin-top: -65px;
+        margin-left: -80px;
+    }
+    .siteheader .logo {
+        left: 0%;
+    }
+    .footermenulink .footermenu ul li a, .copyright p {font-size: 12px}
+}
+
+@media(max-width: 769px) {
+    h1.headinghealthy {
+        font-size: 50px;
+    }
+    .soohealthyitshow .shlogo {
+        width: 35%;
+    }
+    .naturalnutritionSlide {
+        width: 300px !important;
+    }
+    .naturalnutritionSlider .naturalnutritionSlide .Slideinnr .contnt p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .junkfreeproducts {
+        padding-top: 90px;
+        position: relative;
+    }
+    .junkfreeproducts .pdvector {
+        position: absolute;
+        top: -10px;
+        left: 60px;
+        z-index: -1;
+        width: 100%;
+        right: 0;
+        text-align: center;
+    }
+    .junkfreeproducts .pdvectordiff {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        width: 200px;
+    }
+    .junkfreeproducts .pdvectordiff img, .pdvector img {
+        width: 100%;
+    }
+    .naturalnutrition .headingBox h2 {
+        font-size: 25px;
+        line-height: 46px;
+    }
+    .mealdelivery {
+        padding: 80px 0;
+    }
+    .headingBox h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .headingBox h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .mealdelivery .productslide img {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .mealdelivery .headingBox span.mumbaivector {
+        position: absolute;
+        top: -80px;
+        right: 250px;
+        width: 100px;
+    }
+    .wouldyoueatBlock .foodinnr h3 {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 410px;
+    }
+    .wouldyoueatBlock .foodinnr p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .customeragree .arrowbottom {
+        position: absolute;
+        bottom: 44px;
+        left: -80px;
+        width: 170.094px;
+        height: 58.291px;
+        transform: rotate(-6.011deg);
+    }
+    .customeragree .customerbtn {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .siteheader .navbar ul li a {
+        font-size: 12px;
+        padding: 0 15px;
+    }
+    .tabsContent .tabsContentinnr .halfinnr.vidrev .play svg {
+        width: 50px;
+    }
+    .tabsContent .tabsContentinnr .halfinnr p {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+    .tabsContentinnr .row .col-half:nth-child(1) {
+        height: 224px;
+    }
+    .blogsection .col-third .Content h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .footerlogo .logowrap {
+        width: 280px;
+    }
+    .mediadiscount {
+        padding-top: 40px;
+    }
+    .topfooter {
+        border-bottom: 1px solid #E0DCDC;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+    }
+    .socialmedia {
+        margin-left: -40px;
+    }
+    .siteheader .navbar ul li a img {
+        width: 16px;
+    }
+    .siteheader .navbar {
+        height: 50px;
+    }
+}
+@media(max-width: 479px) {
+    h1.headinghealthy {
+        font-size: 40px;
+    }
+    .soohealthyitshow .shlogo {
+        width: 100%;
+        top: 15%;
+    }
+    .soohealthyitshow .dog1, .soohealthyitshow .dog2 {
+        width: 480px;
+        bottom: -90px;
+    }
+    .dog2 img {
+        margin-left: 0;
+    }
+    .soohealthyitshow .dog2 {
+        right: -100%;
+    }
+    .soohealthyitshow .dog1 {
+        right: 52%;
+    }
+    .naturalnutrition .container-fluid {
+        padding-left: 20px;
+    }
+    .naturalnutritionSlider .naturalnutritionSlide .Slideinnr {
+        padding: 14px 13px;
+    }
+    .naturalnutrition .headingBox h2 {
+        font-size: 23px;
+        line-height: 32px;
+        margin-right: 10px;
+    }
+    .btn {
+        width: 160px;
+        font-size: 15px;
+        height: 47px;
+    }
+    .junkfreeproducts {
+        padding-top: 40px;
+        position: relative;
+    }
+    .junkfreeproducts .pdvectordiff {
+        position: absolute;
+        bottom: -30px;
+        left: -10px;
+        width: 110px;
+    }
+    .mealdelivery {
+        padding: 60px 0;
+    }
+    .junkmealbg:after {
+        height: 300px;
+    }
+    .headingBox h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .mealdelivery .headingBox span.mumbaivector {
+        position: absolute;
+        top: -50px;
+        right: 50px;
+        width: 70px;
+    }
+    .wouldyoueatBlock .row:nth-child(1) .arrowtop {
+        display: none;
+    }
+    .headinBox h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .col-55, .col-45, .col-6, .col-4 {
+        width: 100%;
+    }
+    .wouldyoueatBlock .row:nth-child(1) {
+        position: relative;
+        margin-bottom: 0;
+    }
+    .wouldyoueatBlock .row:nth-child(even) {
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+    }
+    .wouldyoueatBlock .row:nth-child(2) .image {
+        margin-top: 0;
+        position: relative;
+    }
+    .wouldyoueatBlock .row:nth-child(1) h3 {
+        transform: rotate(3deg);
+        padding-top: 20px;
+    }
+    .wouldyoueatBlock .row:nth-child(2) h3 {
+        transform: rotate(-3deg);
+        margin-top: 16px;
+    }
+    .customerreview .reviewtabs ul li {
+        margin-right: 30px;
+    }
+    .tabsContentinnr .row .col-half:nth-child(1) {
+        height: 224px;
+        width: 100%;
+    }
+    .tabsContentinnr .col-half:nth-child(2) {
+        margin-top: 0;
+        width: 100%;
+    }
+    .tabsContent .tabsContentinnr .halfinnr p {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .tabsContentinnr .col-half:nth-child(3) {
+        margin-top: 0;
+    }
+    .tabsContentinnr .col-half {
+        width: 100%;
+    }
+    .dogimage {
+        width: 100%;
+        padding-left: 0;
+        margin-top: -100px;
+        position: relative;
+        margin-left: 0px;
+        height: auto;
+    }
+    .dogimage .dogmouthvector {
+        bottom: 150px;
+        left: -30px;
+        z-index: 2;
+        width: 310px;
+    }
+    .dogimage .dogmouthvector .vector svg, .dogimage .dogmouthvector .vector1 svg {
+        width: 120px;
+        height: 150px;
+    }
+    section.blogsection {
+        padding: 40px 0 80px;
+    }
+    .footerlogo {
+        margin-top: -65px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .footerlogo .logowrap {
+        width: 280px;
+        margin: 0 auto;
+    }
+    .mediadiscount {
+        padding-top: 10px;
+        flex-wrap: wrap;
+    }
+    .socialmedia {
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .middlefooter .col-25 {
+        width: 50%;
+    }
+    .copyright {
+        flex-wrap: wrap;
+    }
+    .lefttext, .righttext {
+        width: 100%;
+        text-align: center;
+    }
+    .productSlider button.slick-arrow {
+        width: 60px;
+        height: 60px;
+    }
+    .productSlider button.slick-prev.slick-arrow {
+        left: -10px;
+    }
+    .productSlider button.slick-next.slick-arrow {
+        right: -10px;
+    }
+    .blogsectionslider, .humbugur {
+        display: block !important;
+    }
+    .blogsectionslider .col-third {
+        width: 320px !important;
+        padding: 0 10px;
+    }
+    .navbarinnr {
+        display: none;
+    }
+    .siteheader .logo {
+        left: 0%;
+        width: 130px;        
+        z-index: 1;
+    }
+    .siteheader .siteheaderinnr {
+        overflow: unset;
+        min-height: 50px;
+        background-color: #fde4c1;
+    }
+    .humbugur {
+        text-align: end;
+        margin-top: 13px;
+    }
+    .siteheader .siteheaderinnr:after {display: none;}
+    .navbarinnr {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #FBBE68;
+        z-index: 2;
+    }
+    .navbarinnr .close {
+        display: block !important;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .navbarinnr .navbar {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbarinnr .navbar ul {
+        display: block;
+        height: auto;
+    }
+    .navbarinnr .navbar ul li a {
+        font-size: 20px;
+        margin: 8px 0;
+        color: #fff;
+        padding: 0;
+    }
+    .navbarinnr .navbar ul li {
+        text-align: center;
+    }
+    .navbarinnr .navbar ul li a span {
+        display: inline-block;
+    }
+    .navbarinnr .navbar ul li a img {width: auto; filter: brightness(10) invert(1);position: relative; top: 5px;}
+    .headinBox h2 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .circleshape {
+        position: absolute;
+        bottom: -16%;
+        left: -100px;
+        z-index: -1;
+        width: 154%;
+    }
+    .circletext {
+        width: 90px;
+    }
+    .circletext1 {
+        bottom: 40%;
+    }
+    .circletext5 {
+        left: 2%;
+    }
+    .circletext7 {
+        bottom: 12%;
+    }
+}
+@media(max-width: 390px) {
+    .soohealthyitshow .dog1, .soohealthyitshow .dog2 {
+        width: 450px;
+        bottom: -90px;
+    }
+}
+@media(max-width: 376px) {
+    .soohealthyitshow .dog1, .soohealthyitshow .dog2 {
+        width: 400px;
+        bottom: -90px;
+    }
+    .shlogo img {
+        width: 85%;
+    }
+    .dog2 img {
+        margin-left: -40px;
+    }
+    .circleshape {
+        position: absolute;
+        bottom: -16%;
+        left: -100px;
+        z-index: -1;
+        width: 130%;
+    }
+    .circletext5 img {
+        margin-bottom: -10px;
+    }
+    .btn {
+        width: 140px;
+        font-size: 13px;
+        height: 40px;
+    }
+    h1.headinghealthy {
+        margin-top: -16px;
+    }
+    .circletext.circletext7 img {
+        margin-left: -121px;
+    }
+    .circleshape {
+        left: -60px;
+    }
+    .soohealthyitshow .text {
+        font-size: 19px !important;
+    }
+    .soohealthyitshow .textlulu {
+        margin-top: 10px !important
+    }
+}
