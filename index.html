@@ -24,16 +24,28 @@
 				<div class="col-25">
 				</div>
 				<div class="col-75">
-					<div class="navbar">
-						<ul>
-							<li><a href="">ABOUT</a></li>
-							<li><a href="">FRESH MEALS</a></li>
-							<li><a href="">TREATS</a></li>
-							<li><a href="">BONE BROTH</a></li>
-							<li><a href=""><img src="images/account.png" alt="Account"></a></li>
-							<li><a href=""><img src="images/search.png" alt="Search"></a></li>
-							<li><a href=""><img src="images/shopping-bag.png" alt="Bag"></a></li>
-						</ul>
+					<div class="humbugur" style="display: none;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="33" height="22" viewBox="0 0 33 22" fill="none">
+							<rect x="0.0810547" y="0.181763" width="32" height="4.81818" fill="#000"></rect>
+							<rect x="0.0810547" y="8.90906" width="32" height="4.36364" fill="#000"></rect>
+							<rect x="0.0810547" y="16.1818" width="32" height="4.81818" fill="#000"></rect>
+						</svg>
+					</div>
+					<div class="navbarinnr">
+						<div class="close" style="display: none;">
+							<svg viewBox="0 0 24 24" fill="none" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+						</div>
+						<div class="navbar">
+							<ul>
+								<li><a href="">ABOUT</a></li>
+								<li><a href="">FRESH MEALS</a></li>
+								<li><a href="">TREATS</a></li>
+								<li><a href="">BONE BROTH</a></li>
+								<li><a href=""><img src="images/account.png" alt="Account"> <span>Login</span></a></li>
+								<li><a href=""><img src="images/search.png" alt="Search"> <span>Search</span></a></li>
+								<li><a href=""><img src="images/shopping-bag.png" alt="Bag"> <span>Cart</span></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>	
 			</div>
@@ -399,7 +411,7 @@
 				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none"> <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.6967C8.46447 0.403806 7.98959 0.403806 7.6967 0.6967C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM1 6.75L13 6.75L13 5.25L1 5.25L1 6.75Z" fill="black"/> </svg> 
 			</h4>
 		</div>
-		<div class="row">
+		<div class="row blogsectionslider">
 			<div class="col-third">
 				<div class="col-innr">
 					<div class="image">
@@ -583,73 +595,76 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js'></script>
 
 <script type="text/javascript">
-	document.addEventListener('DOMContentLoaded', () => {
-	    let controller = new ScrollMagic.Controller();
+	if ($(window).width() > 1200) {
+		document.addEventListener('DOMContentLoaded', () => {
+		    let controller = new ScrollMagic.Controller();
 
-	    let t1 = gsap.timeline();
-	    t1.from(".shlogo", { duration: 8, width: '25%', top: '10%', x: 0, ease: "power3.inOut" }, 9)
-	      .from(".headinghealthy", { duration: 8, x: 0, top: '50%', ease: "power3.inOut" }, 9)
-	      .from(".dog1", { duration: 8, x: 0, ease: "power3.inOut" }, 9)
-	      .from(".dog2", { duration: 8, x: 0, ease: "power3.inOut" }, 9)
-	      .from(".textlulu", { duration: 8, x: 0, bottom: '-30%', ease: "power3.inOut" }, 9)
-	      .from(".textlulu", { duration: 9, x: 0, bottom: '-30%', ease: "power3.inOut" }, 10)
-	      .to(".shlogo", { duration: 10, width: '18%', top: '6%', x: 0, ease: "power3.inOut" }, 10)
-	      .to(".headinghealthy", { duration: 10, x: 0, top: '34%', fontSize: '90px', ease: "power3.inOut" }, 10)
-	      .to(".dog1", { duration: 10, x: '14%', ease: "power3.inOut" }, 10)
-	      .to(".dog2", { duration: 10, x: '-54%', ease: "power3.inOut" }, 10)
-	      .to(".textlulu", { duration: 10, x: 0, bottom: '4%', ease: "power3.inOut" }, 11)
-	      .to(".dog1", { duration: 12, x: '26%', ease: "power3.inOut" }, 13)
-	      .to(".dog2", { duration: 12, x: '-84%', ease: "power3.inOut" }, 13)
-	      .to(".textlulu", { duration: 14, x: 0, bottom: '14%', ease: "power3.inOut" }, 16)
-	      .to(".shlogo", { duration: 16, width: '18%', top: '2%', x: 0, ease: "power3.inOut" }, 17)
-	      .to(".headinghealthy", { duration: 16, x: 0, top: '28%', fontSize: '85px', ease: "power3.inOut" }, 17)
-	      .to(".dog1", { duration: 16, x: '46%', ease: "power3.inOut" }, 17)
-	      .to(".dog2", { duration: 16, x: '-100%', ease: "power3.inOut" }, 17)
-	      .to(".textlulu", { duration: 16, x: 0, bottom: '14%', ease: "power3.inOut" }, 17)
-	      .to(".text1 .one", { duration: 14, opacity: 1, ease: "power3.inOut" }, 17)
-	      .to(".text1 .two", { duration: 15, opacity: 1, ease: "power3.inOut" }, 19)
-	      .to(".text1 .three", { duration: 16, opacity: 1, ease: "power3.inOut" }, 21)
-	      .to(".text2 .one", { duration: 17, opacity: 1, ease: "power3.inOut" }, 22)
-	      .to(".text2 .two", { duration: 18, opacity: 1, ease: "power3.inOut" }, 24)
-	      .to(".text3 .one", { duration: 19, opacity: 1, ease: "power3.inOut" }, 26)
-	      .to(".text3 .two", { duration: 20, opacity: 1, ease: "power3.inOut" }, 28)
-	      .to(".text3 .three", { duration: 21, opacity: 1, ease: "power3.inOut" }, 30)
-	      .to(".text3 .four", { duration: 22, opacity: 1, ease: "power3.inOut" }, 32)
-	      .to(".text4 .one", { duration: 23, opacity: 1, ease: "power3.inOut" }, 34)
-	      .to(".text4 .two", { duration: 24, opacity: 1, ease: "power3.inOut" }, 36)
-	      .to(".shlogo", { duration: 25, opacity: 0, ease: "power3.inOut" }, 38)
-	      .to(".headinghealthy", { duration: 25, x: 0, top: '12%', fontSize: '85px', ease: "power3.inOut" }, 38)
-	      .to(".textlulu", { duration: 25, x: 0, bottom: '29%', ease: "power3.inOut" }, 39)
-	      .to(".btngrp", { duration: 26, x: 0, bottom: '19%', opacity: 1, ease: "power3.inOut" }, 41)
-	      .to(".headinghealthy", { duration: 27, opacity: 0, ease: "power3.inOut" }, 43)
-	      .to(".textlulu .text", { duration: 27, fontSize: '30px', ease: "power3.inOut" }, 45)
-	      .to(".textlulu", { duration: 27, x: 0, bottom: '74%', ease: "power3.inOut" }, 47)
-	      .to(".btngrp", { duration: 27, x: 0, bottom: '65%', opacity: 1, ease: "power3.inOut" }, 47)
-	      .to(".dog1", { duration: 28, x: '140%', ease: "power3.inOut" }, 49)
-	      .to(".dog2", { duration: 28, x: '-200%', ease: "power3.inOut" }, 49)
-	      .to(".textlulu", { duration: 29, opacity: 0, ease: "power3.inOut" }, 51)
-	      .to(".btngrp", { duration: 29, opacity: 0, ease: "power3.inOut" }, 51)
-	      .to(".dog1", { duration: 30, x: '140%', y: '-35%', ease: "power3.inOut" }, 53)
-	      .to(".dog2", { duration: 30, x: '-200%', y: '-35%', ease: "power3.inOut" }, 53)
-	      .to(".circleshape", { duration: 30,x: 0, bottom: '-16%', opacity: 1, ease: "power3.inOut" }, 53)
-	      .to(".circletext1", { duration: 31,x: 0, left: '34%', opacity: 1, ease: "power3.inOut" }, 55)
-	      .to(".circletext2", { duration: 45,x: 0, right: '13%', opacity: 1, ease: "power3.inOut" }, 57)
-	      .to(".circletext3", { duration: 46,x: 0, bottom: '22%', opacity: 1, ease: "power3.inOut" }, 69)
-	      .to(".circletext5", { duration: 47,x: 0, bottom: '35%', opacity: 1, ease: "power3.inOut" }, 71)
-	      .to(".circletext4", { duration: 48,x: 0, left: '20%', bottom: '14%', opacity: 1, ease: "power3.inOut" }, 83)
-	      .to(".circletext6", { duration: 49,x: 0, bottom: '-1%', opacity: 1, ease: "power3.inOut" }, 105)
-	      .to(".circletext7", { duration: 40,x: 0, right: '16%', opacity: 1, ease: "power3.inOut" }, 117);
+		    let t1 = gsap.timeline();
+		    t1.from(".shlogo", { duration: 8, width: '25%', top: '10%', x: 0, ease: "power3.inOut" }, 9)
+		      .from(".headinghealthy", { duration: 8, x: 0, top: '50%', ease: "power3.inOut" }, 9)
+		      .from(".dog1", { duration: 8, x: 0, ease: "power3.inOut" }, 9)
+		      .from(".dog2", { duration: 8, x: 0, ease: "power3.inOut" }, 9)
+		      .from(".textlulu", { duration: 8, x: 0, bottom: '-30%', ease: "power3.inOut" }, 9)
+		      .from(".textlulu", { duration: 9, x: 0, bottom: '-30%', ease: "power3.inOut" }, 10)
+		      .to(".shlogo", { duration: 10, width: '18%', top: '6%', x: 0, ease: "power3.inOut" }, 10)
+		      .to(".headinghealthy", { duration: 10, x: 0, top: '34%', fontSize: '90px', ease: "power3.inOut" }, 10)
+		      .to(".dog1", { duration: 10, x: '14%', ease: "power3.inOut" }, 10)
+		      .to(".dog2", { duration: 10, x: '-54%', ease: "power3.inOut" }, 10)
+		      .to(".textlulu", { duration: 10, x: 0, bottom: '4%', ease: "power3.inOut" }, 11)
+		      .to(".dog1", { duration: 12, x: '26%', ease: "power3.inOut" }, 13)
+		      .to(".dog2", { duration: 12, x: '-84%', ease: "power3.inOut" }, 13)
+		      .to(".textlulu", { duration: 14, x: 0, bottom: '14%', ease: "power3.inOut" }, 16)
+		      .to(".shlogo", { duration: 16, width: '18%', top: '2%', x: 0, ease: "power3.inOut" }, 17)
+		      .to(".headinghealthy", { duration: 16, x: 0, top: '28%', fontSize: '85px', ease: "power3.inOut" }, 17)
+		      .to(".dog1", { duration: 16, x: '46%', ease: "power3.inOut" }, 17)
+		      .to(".dog2", { duration: 16, x: '-100%', ease: "power3.inOut" }, 17)
+		      .to(".textlulu", { duration: 16, x: 0, bottom: '14%', ease: "power3.inOut" }, 17)
+		      .to(".text1 .one", { duration: 14, opacity: 1, ease: "power3.inOut" }, 17)
+		      .to(".text1 .two", { duration: 15, opacity: 1, ease: "power3.inOut" }, 19)
+		      .to(".text1 .three", { duration: 16, opacity: 1, ease: "power3.inOut" }, 21)
+		      .to(".text2 .one", { duration: 17, opacity: 1, ease: "power3.inOut" }, 22)
+		      .to(".text2 .two", { duration: 18, opacity: 1, ease: "power3.inOut" }, 24)
+		      .to(".text3 .one", { duration: 19, opacity: 1, ease: "power3.inOut" }, 26)
+		      .to(".text3 .two", { duration: 20, opacity: 1, ease: "power3.inOut" }, 28)
+		      .to(".text3 .three", { duration: 21, opacity: 1, ease: "power3.inOut" }, 30)
+		      .to(".text3 .four", { duration: 22, opacity: 1, ease: "power3.inOut" }, 32)
+		      .to(".text4 .one", { duration: 23, opacity: 1, ease: "power3.inOut" }, 34)
+		      .to(".text4 .two", { duration: 24, opacity: 1, ease: "power3.inOut" }, 36)
+		      .to(".shlogo", { duration: 25, opacity: 0, ease: "power3.inOut" }, 38)
+		      .to(".headinghealthy", { duration: 25, x: 0, top: '12%', fontSize: '85px', ease: "power3.inOut" }, 38)
+		      .to(".textlulu", { duration: 25, x: 0, bottom: '29%', ease: "power3.inOut" }, 39)
+		      .to(".btngrp", { duration: 26, x: 0, bottom: '19%', opacity: 1, ease: "power3.inOut" }, 41)
+		      .to(".headinghealthy", { duration: 27, opacity: 0, ease: "power3.inOut" }, 43)
+		      .to(".textlulu .text", { duration: 27, fontSize: '30px', ease: "power3.inOut" }, 45)
+		      .to(".textlulu", { duration: 27, x: 0, bottom: '74%', ease: "power3.inOut" }, 47)
+		      .to(".btngrp", { duration: 27, x: 0, bottom: '65%', opacity: 1, ease: "power3.inOut" }, 47)
+		      .to(".dog1", { duration: 28, x: '140%', ease: "power3.inOut" }, 49)
+		      .to(".dog2", { duration: 28, x: '-200%', ease: "power3.inOut" }, 49)
+		      .to(".textlulu", { duration: 29, opacity: 0, ease: "power3.inOut" }, 51)
+		      .to(".btngrp", { duration: 29, opacity: 0, ease: "power3.inOut" }, 51)
+		      .to(".dog1", { duration: 30, x: '140%', y: '-35%', ease: "power3.inOut" }, 53)
+		      .to(".dog2", { duration: 30, x: '-200%', y: '-35%', ease: "power3.inOut" }, 53)
+		      .to(".circleshape", { duration: 30,x: 0, bottom: '-16%', opacity: 1, ease: "power3.inOut" }, 53)
+		      .to(".circletext1", { duration: 31,x: 0, left: '34%', opacity: 1, ease: "power3.inOut" }, 55)
+		      .to(".circletext2", { duration: 45,x: 0, right: '13%', opacity: 1, ease: "power3.inOut" }, 57)
+		      .to(".circletext3", { duration: 46,x: 0, bottom: '22%', opacity: 1, ease: "power3.inOut" }, 69)
+		      .to(".circletext5", { duration: 47,x: 0, bottom: '35%', opacity: 1, ease: "power3.inOut" }, 71)
+		      .to(".circletext4", { duration: 48,x: 0, left: '20%', bottom: '14%', opacity: 1, ease: "power3.inOut" }, 83)
+		      .to(".circletext6", { duration: 49,x: 0, bottom: '-1%', opacity: 1, ease: "power3.inOut" }, 105)
+		      .to(".circletext7", { duration: 40,x: 0, right: '16%', opacity: 1, ease: "power3.inOut" }, 117);
 
-	    let scene = new ScrollMagic.Scene({
-	        triggerElement: '#constant-stress',
-	        duration: 1000,
-	        triggerHook: 0,
-	        offset: 0,
-	    })
-	    .setTween(t1)
-	    .setPin('#constant-stress')
-	    .addTo(controller);
-	});
+		    let scene = new ScrollMagic.Scene({
+		        triggerElement: '#constant-stress',
+		        duration: 1000,
+		        triggerHook: 0,
+		        offset: 0,
+		    })
+		    .setTween(t1)
+		    .setPin('#constant-stress')
+		    .addTo(controller);
+		});
+	}
+	
 
 	$('.productSlider').slick({
 	  infinite: true,
@@ -692,6 +707,14 @@
         $(this).hide();
     }); 
 
+    $('.humbugur').on('click', function () {
+        $(".navbarinnr").show();
+    }); 
+
+    $('.navbarinnr .close').on('click', function () {
+        $(".navbarinnr").hide();
+    }); 
+
 
     $(document).scroll(function () {
 	    var heightlocation = $(this).scrollTop();
@@ -703,61 +726,140 @@
 	});
 
 
-    document.addEventListener("DOMContentLoaded", function() {
-	    gsap.registerPlugin(ScrollTrigger);
-
-	    gsap.from(".wouldyoueatBlock .image img", {
-	        scrollTrigger: {
-	            trigger: ".row",
-	            start: "top 80%",
-	            end: "bottom 20%",
-	            scrub: true
-	        },
-	        x: -200,
-	        // opacity: 0,
-	        duration: 1
-	    });
-
-	    gsap.from(".wouldyoueatBlock .foodinnr", {
-	        scrollTrigger: {
-	            trigger: ".row",
-	            start: "top 80%",
-	            end: "bottom 20%",
-	            scrub: true
-	        },
-	        x: 200,
-	        // opacity: 0,
-	        duration: 1
-	    });
-
-	    gsap.to(".wouldyoueatBlock .row", {
-	        scrollTrigger: {
-	            trigger: ".row",
-	            start: "top 80%",
-	            end: "bottom 20%",
-	            scrub: true
-	        },
-	        // opacity: 1,
-	        duration: 1
-	    });
-	});
-
-
 </script>
  <script>
-    gsap.registerPlugin(ScrollTrigger);
+ 	if ($(window).width() > 800) {
+	    document.addEventListener("DOMContentLoaded", function() {
+		    gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from("#pdimg", {
-      y: 200, // Starts 200 pixels below its natural position
-      opacity: 1,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#pdimg",
-        start: "top 80%", // Animation starts when the top of the image is 80% from the top of the viewport
-        end: "top 30%", // Animation ends when the top of the image is 30% from the top of the viewport
-        scrub: true // Smooth scrubbing, the animation plays based on scroll position
-      }
-    });
+		    gsap.from(".wouldyoueatBlock .image img", {
+		        scrollTrigger: {
+		            trigger: ".row",
+		            start: "top 80%",
+		            end: "bottom 20%",
+		            scrub: true
+		        },
+		        x: -200,
+		        // opacity: 0,
+		        duration: 1
+		    });
+
+		    gsap.from(".wouldyoueatBlock .foodinnr", {
+		        scrollTrigger: {
+		            trigger: ".row",
+		            start: "top 80%",
+		            end: "bottom 20%",
+		            scrub: true
+		        },
+		        x: 200,
+		        // opacity: 0,
+		        duration: 1
+		    });
+
+		    gsap.to(".wouldyoueatBlock .row", {
+		        scrollTrigger: {
+		            trigger: ".row",
+		            start: "top 80%",
+		            end: "bottom 20%",
+		            scrub: true
+		        },
+		        // opacity: 1,
+		        duration: 1
+		    });
+		});
+	    gsap.registerPlugin(ScrollTrigger);
+
+	    gsap.from("#pdimg", {
+	      y: 200, // Starts 200 pixels below its natural position
+	      opacity: 1,
+	      duration: 1,
+	      scrollTrigger: {
+	        trigger: "#pdimg",
+	        start: "top 80%", // Animation starts when the top of the image is 80% from the top of the viewport
+	        end: "top 30%", // Animation ends when the top of the image is 30% from the top of the viewport
+	        scrub: true // Smooth scrubbing, the animation plays based on scroll position
+	      }
+	    });
+	}
+	if ($(window).width() < 479) {
+		$('.blogsectionslider').slick({
+		  infinite: true,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  dots: false,
+		  variableWidth: true,
+		  autoplay: true,
+		  autoplaySpeed: 2000,
+		});
+		document.addEventListener('DOMContentLoaded', () => {
+		    let controller = new ScrollMagic.Controller();
+
+		    let t1 = gsap.timeline();
+		    t1.from(".shlogo", { duration: 8, width: '100%', top: '15%', x: 0, ease: "power3.inOut" }, 9)
+		      .from(".headinghealthy", { duration: 8, x: 0, top: '50%', ease: "power3.inOut" }, 9)
+		      .from(".dog1", { duration: 8, x: 0, ease: "power3.inOut" }, 9)
+		      .from(".dog2", { duration: 8, x: 0, ease: "power3.inOut" }, 9)
+		      .from(".textlulu", { duration: 8, x: 0, bottom: '-30%', ease: "power3.inOut" }, 9)
+		      .from(".textlulu", { duration: 9, x: 0, bottom: '-30%', ease: "power3.inOut" }, 10)
+		      .to(".shlogo", { duration: 10, width: '90%', top: '6%', x: 0, ease: "power3.inOut" }, 10)
+		      .to(".headinghealthy", { duration: 10, x: 0, top: '34%', fontSize: '35px', ease: "power3.inOut" }, 10)
+		      .to(".dog1", { duration: 10, x: '4%', ease: "power3.inOut" }, 10)
+		      .to(".dog2", { duration: 10, x: '-4%', ease: "power3.inOut" }, 10)
+		      .to(".textlulu", { duration: 10, x: 0, bottom: '34%', ease: "power3.inOut" }, 11)
+		      .to(".dog1", { duration: 12, x: '8%', ease: "power3.inOut" }, 13)
+		      .to(".dog2", { duration: 12, x: '-36%', ease: "power3.inOut" }, 13)
+		      .to(".textlulu", { duration: 14, x: 0, bottom: '43%', ease: "power3.inOut" }, 16)
+		      .to(".shlogo", { duration: 16, width: '90%', top: '2%', x: 0, ease: "power3.inOut" }, 17)
+		      .to(".headinghealthy", { duration: 16, x: 0, top: '30%', fontSize: '30px', ease: "power3.inOut" }, 17)
+		      .to(".dog1", { duration: 16, x: '16%', ease: "power3.inOut" }, 17)
+		      .to(".dog2", { duration: 16, x: '-40%', ease: "power3.inOut" }, 17)
+		      .to(".textlulu", { duration: 16, x: 0, bottom: '43%', ease: "power3.inOut" }, 17)
+		      .to(".text1 .one", { duration: 14, opacity: 1, ease: "power3.inOut" }, 17)
+		      .to(".text1 .two", { duration: 15, opacity: 1, ease: "power3.inOut" }, 19)
+		      .to(".text1 .three", { duration: 16, opacity: 1, ease: "power3.inOut" }, 21)
+		      .to(".text2 .one", { duration: 17, opacity: 1, ease: "power3.inOut" }, 22)
+		      .to(".text2 .two", { duration: 18, opacity: 1, ease: "power3.inOut" }, 24)
+		      .to(".text3 .one", { duration: 19, opacity: 1, ease: "power3.inOut" }, 26)
+		      .to(".text3 .two", { duration: 20, opacity: 1, ease: "power3.inOut" }, 28)
+		      .to(".text3 .three", { duration: 21, opacity: 1, ease: "power3.inOut" }, 30)
+		      .to(".text3 .four", { duration: 22, opacity: 1, ease: "power3.inOut" }, 32)
+		      .to(".text4 .one", { duration: 23, opacity: 1, ease: "power3.inOut" }, 34)
+		      .to(".text4 .two", { duration: 24, opacity: 1, ease: "power3.inOut" }, 36)
+		      .to(".shlogo", { duration: 25, opacity: 0, ease: "power3.inOut" }, 38)
+		      .to(".headinghealthy", { duration: 25, x: 0, top: '12%', fontSize: '30px', ease: "power3.inOut" }, 38)
+		      .to(".textlulu", { duration: 25, x: 0, bottom: '60%', ease: "power3.inOut" }, 39)
+		      .to(".btngrp", { duration: 26, x: 0, bottom: '50%', opacity: 1, ease: "power3.inOut" }, 41)
+		      // .to(".headinghealthy", { duration: 27, opacity: 0, ease: "power3.inOut" }, 43)
+		      .to(".textlulu .text", { duration: 27, fontSize: '22px', ease: "power3.inOut" }, 45)
+		      .to(".textlulu", { duration: 27, x: 0, bottom: '65%', ease: "power3.inOut" }, 47)
+		      .to(".btngrp", { duration: 27, x: 0, bottom: '56%', opacity: 1, ease: "power3.inOut" }, 47)
+		      .to(".dog1", { duration: 28, x: '64%', ease: "power3.inOut" }, 49)
+		      .to(".dog2", { duration: 28, x: '-94%', ease: "power3.inOut" }, 49)
+		      // .to(".textlulu", { duration: 29, opacity: 0, ease: "power3.inOut" }, 51)
+		      // .to(".btngrp", { duration: 29, opacity: 0, ease: "power3.inOut" }, 51)
+		      .to(".dog1", { duration: 30, x: '64%', y: '-35%', ease: "power3.inOut" }, 53)
+		      .to(".dog2", { duration: 30, x: '-94%', y: '-35%', ease: "power3.inOut" }, 53)
+		      .to(".circleshape", { duration: 30,x: 0, bottom: '-6%', opacity: 1, ease: "power3.inOut" }, 53)
+		      .to(".circletext1", { duration: 31,x: 0, left: '23%', opacity: 1, ease: "power3.inOut" }, 55)
+		      .to(".circletext2", { duration: 45,x: 0, right: '13%', opacity: 1, ease: "power3.inOut" }, 57)
+		      .to(".circletext3", { duration: 46,x: 0, bottom: '15%', opacity: 1, ease: "power3.inOut" }, 69)
+		      .to(".circletext5", { duration: 47,x: 0, bottom: '20%', opacity: 1, ease: "power3.inOut" }, 71)
+		      .to(".circletext4", { duration: 48,x: 0, left: '3%', bottom: '10%', opacity: 1, ease: "power3.inOut" }, 83)
+		      .to(".circletext6", { duration: 49,x: 0, bottom: '-1%', opacity: 1, ease: "power3.inOut" }, 105)
+		      .to(".circletext7", { duration: 40,x: 0, right: '-34%', opacity: 1, ease: "power3.inOut" }, 117);
+
+		    let scene = new ScrollMagic.Scene({
+		        triggerElement: '#constant-stress',
+		        duration: 1000,
+		        triggerHook: 0,
+		        offset: 0,
+		    })
+		    .setTween(t1)
+		    .setPin('#constant-stress')
+		    .addTo(controller);
+		});
+	}
   </script>
 </body>
 </html>
