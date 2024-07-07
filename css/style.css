@@ -1075,8 +1075,14 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
     .circletext.circletext7 img {
         margin-left: -100px;
     }
+    .siteheader .logo {
+        left: 6%;
+    }
 }
 @media(max-width: 1300px) {
+    .siteheader .logo {
+        left: 12%;
+    }
     .soohealthyitshow .dog1 img,  .soohealthyitshow .dog2 img {width: 100%;}
     .soohealthyitshow .dog1, .soohealthyitshow .dog2 {
         width: 550px;
