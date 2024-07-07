@@ -192,6 +192,7 @@ footer.sitefooter {
     padding: 0 25px;
     text-decoration: none;
 }
+.navbar li a span {display: none;}
 .siteheader .siteheaderinnr{position: relative;overflow: hidden;}
 .siteheader .siteheaderinnr:after {
     content: "";
