@@ -92,6 +92,19 @@ ul  {
         stroke-dashoffset: 0;
     }
 }
+.dogmouthvector .vector1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation: drawinverse 2s linear forwards infinite;
+    animation-delay: 1s;
+}
+
+@keyframes drawinverse {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
 .linethumb {
     stroke-dasharray: 100;
     stroke-dashoffset: 100;
@@ -801,7 +814,7 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 .naturalnutritionSlider .naturalnutritionSlide .Slideinnr {
     border-radius: 15px;
     background: #FEE5C2;
-    padding: 30px 30px 20px 20px;
+    padding: 30px 20px;
     display: flex;
     align-items: center;
 }
@@ -841,7 +854,7 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 }
 .junkmealbg {background: url(../images/bg.png);position: relative;background-size: cover !important;}
 .naturalnutritionSlide {
-    padding: 0 6px;width: 560px !important;
+    padding: 0 6px;width: 460px !important;
 }
 .naturalnutritionSlider {margin: 20px 0;}
 .naturalnutrition .container-fluid {padding-left: 40px;}
@@ -1025,7 +1038,7 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
     cursor: pointer;
 }
 .textlulu .text span {opacity: 0.25;}
-#orig .naturalnutritionSlider {
+/*#orig .naturalnutritionSlider {
     white-space: nowrap;
     animation: marquee 10s linear infinite;
 }
@@ -1037,7 +1050,7 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
 @keyframes marquee {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
-}
+}*/
 
 @media(min-width: 1680px) {
     .dog2 img {
@@ -1602,11 +1615,22 @@ h1 {color: #272220; text-align: center; font-family: Arimo; font-size: 100px; fo
     .circletext7 {
         bottom: 12%;
     }
+    .circletext.circletext7 img {
+        margin-left: -140px;
+    }
+    .junkfreetreatPD {
+        padding: 40px 0;
+    }
 }
-@media(max-width: 390px) {
+@media(max-width: 395px) {
     .soohealthyitshow .dog1, .soohealthyitshow .dog2 {
         width: 450px;
         bottom: -90px;
+    }
+    .circletext.circletext7 img {
+        margin-left: -118px;
+        margin-bottom: -20px;
+        width: 90%;
     }
 }
 @media(max-width: 376px) {
