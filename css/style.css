@@ -93,7 +93,7 @@ ul  {
     }
 }
 .dogmouthvector .vector1 {
-    stroke-dasharray: 1000;
+    stroke-dasharray: 1200;
     stroke-dashoffset: 0;
     animation: drawinverse 2s linear forwards infinite;
     animation-delay: 1s;
@@ -101,7 +101,7 @@ ul  {
 
 @keyframes drawinverse {
     to {
-        stroke-dashoffset: 1000;
+        stroke-dashoffset: 1200;
     }
 }
 
