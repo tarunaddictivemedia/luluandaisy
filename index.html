@@ -142,13 +142,11 @@
 			<div class="junkfreetreatPD">
 				<div class="junkfreeproducts">
 					<img src="images/pdgrp.png" alt="Product" id="pdimg">
-					<div class="pdvectorpk">
-						<div class="pdvector">
-							<img src="images/pdvector.png" alt="Vector">
-						</div>
-						<div class="pdvectordiff">
-							<img src="images/chesse.png" alt="Vector">
-						</div>
+					<div class="pdvector">
+						<img src="images/pdvector.png" alt="Vector">
+					</div>
+					<div class="pdvectordiff">
+						<img src="images/chesse.png" alt="Vector">
 					</div>
 				</div>
 			</div>
@@ -391,7 +389,7 @@
 				                <path class="line" d="M86 77.7783L3 77.7783" stroke="#EACB62" stroke-width="6" stroke-linecap="round"/>
 				            </svg>
 				        </div>
-				        <div class="vector">
+				        <div class="vector1">
 				            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="200" viewBox="0 0 148 164" fill="none">
 				                <path class="line" d="M87 3.77832L36 20.5115" stroke="#EACB62" stroke-width="6" stroke-linecap="round"/>
 				                <path class="line" d="M145 95.7783L29 75.7783" stroke="#EACB62" stroke-width="6" stroke-linecap="round"/>
@@ -678,16 +676,16 @@
 	  dots: false
 	});
 
-	// $('.naturalnutritionSlider').slick({
-	//   infinite: true,
-	//   slidesToShow: 1,
-	//   slidesToScroll: 1,
-	//   arrows: false,
-	//   dots: false,
-	//   variableWidth: true,
-	//   autoplay: true,
-	//   autoplaySpeed: 2000,
-	// });
+	$('.naturalnutritionSlider').slick({
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: false,
+	  variableWidth: true,
+	  autoplay: true,
+	  autoplaySpeed: 800,
+	});
 
 	$(".reviewtabs ul li").click(function(e) {
 	    //Variable
@@ -773,12 +771,23 @@
 		});
 	    gsap.registerPlugin(ScrollTrigger);
 
-	    gsap.from(".junkfreeproducts", {
-	      y: 200, // Starts 200 pixels below its natural position
+	    gsap.from("#pdimg", {
+	      y: 100, // Starts 200 pixels below its natural position
 	      opacity: 1,
 	      duration: 1,
 	      scrollTrigger: {
-	        trigger: ".junkfreeproducts",
+	        trigger: "#pdimg",
+	        start: "top 100%", // Animation starts when the top of the image is 80% from the top of the viewport
+	        end: "top 60%", // Animation ends when the top of the image is 30% from the top of the viewport
+	        scrub: true // Smooth scrubbing, the animation plays based on scroll position
+	      }
+	    });
+	    gsap.from(".pdvector", {
+	      y: 200, // Starts 200 pixels below its natural position
+	      opacity: 1.5,
+	      duration: 1.5,
+	      scrollTrigger: {
+	        trigger: ".pdvector",
 	        start: "top 80%", // Animation starts when the top of the image is 80% from the top of the viewport
 	        end: "top 30%", // Animation ends when the top of the image is 30% from the top of the viewport
 	        scrub: true // Smooth scrubbing, the animation plays based on scroll position
